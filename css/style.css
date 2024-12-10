@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    background-color: #F7ECDE;
+}
+h1{
+    font-family: "Pacifico" ;
+    font-weight: 500;
+    font-size: 50px;
+    color: #352E28;
+    margin-bottom: 60px;
+    position: relative;
+}
+h1::before{
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    left: 50%;
+    top: 75%;
+    transform: translateX(-50%);
+    background-color: #FEC260;
+    z-index: -1;
+}
+h1:hover::before{
+    height:50%;
+    top: 45%;
+    transition: 0.7s ease;
+}
+h2{
+    font-family: "Righteous";
+    font-weight: 500;
+    font-size: 25px;
+    background-image: linear-gradient(to right,#3FA55B, #B1AC4A);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+label{
+    font-family: "PT Sans Caption";
+    font-weight: 600;
+}
+input{
+    border-color: transparent;
+    border-radius: 4px;
+}
+.info{
+    border-top-style:dotted;
+    border-bottom-style: dotted;
+    padding: 20px;
+}
+#submitBtn{
+    background-color: #de4e26;
+    font-family: "PT Sans Caption";
+    color: white;
+    border-color: transparent;
+    width: 12%;
+    margin: auto;
+    padding: 5px 20px;
+    border-radius: 4px;
+
+}
+#submitBtn:hover{
+    background-color: #BB4120 ;
+    transition-duration: 0.8s;
+}
+.last{
+    background-color: white;
+    font-family: "PT Sans Caption";
+    font-weight: 700;
+}
+.dh , .db{
+    padding: 10px;
+}

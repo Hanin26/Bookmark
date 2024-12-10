@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <div class="container my-5">
+            <h1 class="text-center pt-3">Bookmarker</h1>
+            <div class="info d-flex flex-column gap-4">
+            <h2 class="text-center">
+                <i class="fa-solid fa-bookmark"></i>
+                Bookmark your favorite sites 
+                <i class="fa-solid fa-bookmark"></i>
+            </h2>
+           
+            <div class="name d-flex flex-column gap-2">
+            <label for="name"><i class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label>
+            <input type="text" placeholder="Bookmark Name" id="name">
+            </div>
+            <div class="web d-flex flex-column gap-2">
+            <label for="site"><i class="fa-solid fa-link pe-2"></i>Site URL</label>
+            <input oninput="validationUrl()" type="text" placeholder="site URL" id="site">
+            </div>
+            <button onclick="add()" id="submitBtn" type="submit">Submit</button>
+        </div>
+        
+        <table class="last w-100 my-3" >
+            <thead>
+                <th class="dh">index</th>
+                <th class="dh">Website Name</th>
+                <th class="dh">Visit</th>
+                <th class="dh">Delete</th>
+              </thead>
+              <tbody class="mt-5" id="last">
+
+              </tbody>
+        </table>
+        
+        </div>
+
+        <script src="./Js/bootstrap.bundle.min.js"></script>
+        <script src="./Js/main.js"></script>
+    </body>
+</html>
